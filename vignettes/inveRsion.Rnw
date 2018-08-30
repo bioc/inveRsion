@@ -34,7 +34,8 @@ There are specialized functions to load genotype data onto an R session; {\tt se
 
 \texttt{inveRsion} is written on R (\texttt{www.r-cran.org}). The package can be downloaded from {\tt www.bioconductor.org}. Alternatively, enter in the R prompt the commands
 \begin{verbatim}
- source(" http://bioconductor.org/biocLite.R ")
+ if (!requireNamespace("BiocManager", quietly=TRUE))
+     install.packages("BiocManager")
  biocList(inveRsion)
 \end{verbatim}
 
